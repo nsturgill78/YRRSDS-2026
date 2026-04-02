@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CalendarDays, MapPin, Users } from "lucide-react";
 import { site } from "@/data/site-data";
+import { assetPath } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -8,7 +9,7 @@ export function Hero() {
       <div
         className="relative flex min-h-[72vh] items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url(${site.heroImage})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url(${assetPath(site.heroImage)})`,
         }}
       >
         <div className="px-6 text-center text-white md:px-10">

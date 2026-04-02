@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { site, siteUrl } from "@/lib/site";
+import { absoluteUrl, site, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     images: [
       {
-        url: "/og-image.jpg",
+        url: absoluteUrl("/og-image.jpg"),
         width: 1200,
         height: 630,
         alt: site.fullTitle,
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.fullTitle,
     description: site.description,
-    images: ["/og-image.jpg"],
+    images: [absoluteUrl("/og-image.jpg")],
   },
   alternates: {
-    canonical: "/",
+    canonical: absoluteUrl("/"),
   },
 };
 

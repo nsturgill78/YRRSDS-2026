@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
+    "start": "npx serve out",
+    "lint": "eslint .",
+    "pages:build": "next build",
+    "preview": "npx serve out"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
