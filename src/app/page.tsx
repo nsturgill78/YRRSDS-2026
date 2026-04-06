@@ -58,7 +58,7 @@ export default function HomePage() {
           <SectionTitle
             eyebrow="Important dates"
             title="Planning timeline"
-            description="The current website scaffold uses the working timeline from the planning draft and keeps the remaining details as placeholders."
+            description="Key submission and program dates for the 2026 workshop cycle."
           />
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

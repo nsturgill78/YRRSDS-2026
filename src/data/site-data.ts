@@ -23,7 +23,7 @@ export const navItems = [
   { href: "/keynotes", label: "Keynotes" },
   { href: "/participating", label: "Participating" },
   { href: "/cfp", label: "Call for Papers" },
-  { href: "/committees", label: "Committees" },
+  { href: "/collaborators", label: "Collaborators" },
 ] as const;
 
 export const schedule = [
@@ -43,26 +43,24 @@ export const importantDates = [
   { label: "Submissions open", date: "April 8, 2026" },
   { label: "Submissions close", date: "May 1, 2026" },
   { label: "Review period", date: "May 2026" },
-  { label: "Notifications sent", date: "Mid-May 2026" },
-  { label: "Presenter confirmations due", date: "Late May 2026" },
-  { label: "Final program published", date: "Mid-June 2026" },
+  { label: "Notifications sent", date: "May 15, 2026" },
+  { label: "Presenter confirmations due", date: "May 31, 2026" },
+  { label: "Final program published", date: "June 15, 2026" },
   { label: "Workshop held in Atlanta", date: "July 31, 2026" },
 ] as const;
 
 export const keynotes = [
   {
     title: "Keynote I",
-    speaker: "Speaker TBA",
-    affiliation: "Affiliation TBA",
-    abstract:
-      "Placeholder for the invited morning keynote. Replace with confirmed title, speaker bio, and abstract.",
+    speaker: "To be announced",
+    affiliation: "Speaker details forthcoming",
+    abstract: "The invited morning keynote will be announced soon.",
   },
   {
     title: "Keynote II",
-    speaker: "Speaker TBA",
-    affiliation: "Affiliation TBA",
-    abstract:
-      "Placeholder for the invited afternoon keynote. Replace with confirmed title, speaker bio, and abstract.",
+    speaker: "To be announced",
+    affiliation: "Speaker details forthcoming",
+    abstract: "The invited afternoon keynote will be announced soon.",
   },
 ] as const;
 
@@ -74,18 +72,17 @@ export const cfpBullets = [
   "Program design: one day, with two keynotes, two paper sessions, and one panel or roundtable",
 ] as const;
 
-export const committeeGroups = [
+export const collaboratorGroups = [
   {
-    title: "Organizing Committee",
-    members: ["Name TBA", "Name TBA", "Name TBA"],
+    title: "Workshop co-chairs",
+    members: [
+      "Noah Sturgill (1st Year PhD student, Emory NLP Lab)",
+      "Winston Zeng (1st Year PhD student, Emory NLP Lab)",
+    ],
   },
   {
-    title: "Program Committee",
-    members: ["Name TBA", "Name TBA", "Name TBA", "Name TBA"],
-  },
-  {
-    title: "Local / Logistics Support",
-    members: ["Name TBA", "Name TBA"],
+    title: "Collaborator",
+    members: ["Nayoung Choi (2nd Year PhD Candidate, Emory NLP Lab)"],
   },
 ] as const;
 

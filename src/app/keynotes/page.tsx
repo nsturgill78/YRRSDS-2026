@@ -16,7 +16,7 @@ export default function KeynotesPage() {
           as="h1"
           eyebrow="Keynotes"
           title="Invited speakers"
-          description="These sections are ready to be replaced with confirmed keynote details, talk titles, biographies, and abstracts."
+          description="Invited keynote speakers and talk details will be announced soon."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {keynotes.map((keynote) => (

@@ -38,7 +38,7 @@ export default function CFPPage() {
             <h2 className="mb-4 text-2xl font-semibold">Submission model</h2>
             <p className="mb-4 text-sm leading-6 text-zinc-700 md:text-base">
               The current plan is for the submission portal to open on {site.submissionOpenLabel} and close on{" "}
-              {site.submissionCloseLabel}. Replace the placeholder submission link once the external system is live.
+              {site.submissionCloseLabel}. Add the submission link here once the external system is live.
             </p>
             <ul className="list-inside list-disc space-y-3 text-sm leading-6 text-zinc-700 md:text-base">
               {cfpBullets.map((bullet) => (

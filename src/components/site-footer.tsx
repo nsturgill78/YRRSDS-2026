@@ -8,9 +8,8 @@ export function SiteFooter() {
         <div>
           <div className="text-xl font-bold text-white">{site.name}</div>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-300 md:text-base">
-            Web framework draft for the 2026 Atlanta edition at Emory University. Replace placeholders with
-            final speakers, committee members, venue details, submission links, and SIGDIAL coordination
-            information.
+            Website draft for the 2026 Atlanta edition at Emory University. Update this site as speakers,
+            committee members, venue details, submission links, and SIGDIAL coordination information are finalized.
           </p>
         </div>
         <div className="grid gap-2 text-sm md:justify-self-end md:text-right">
