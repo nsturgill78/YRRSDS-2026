@@ -32,15 +32,21 @@ export default function HomePage() {
                   <li>1 panel or roundtable</li>
                   <li>Optional evening dinner / social event</li>
                   <li>Extended abstracts as the submission model</li>
+                  <li>
+                    Submissions open {site.submissionOpenLabel} and close {site.submissionCloseLabel}
+                  </li>
                 </ul>
               </InfoCard>
 
               <InfoCard title="Venue">
                 <p>{site.venue}</p>
                 <p>
-                  Hosted at Emory University in Atlanta, Georgia. Add final building, room details, map,
-                  accessibility notes, and on-site logistics here.
+                  The workshop is scheduled for {site.dateLabel}. Travel planning, parking, nearby dining,
+                  and local area guidance are available on the participation page.
                 </p>
+                <Link href="/participating#local-guide" className="inline-block font-medium text-[#d83a34] hover:underline">
+                  View travel and local guide
+                </Link>
               </InfoCard>
             </div>
           </div>
