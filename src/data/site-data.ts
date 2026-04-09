@@ -11,7 +11,7 @@ export const site = {
   submissionCloseLabel: "May 1, 2026",
   sigdialLabel: "Directly preceding SIGDIAL 2026",
   accent: "#d83a34",
-  registrationUrl: "#",
+  registrationUrl: "https://openreview.net/group?id=YRRSDS/2026/Workshop",
   submissionUrl: "#",
   logisticsUrl: "/participating#local-guide",
   heroImage: "/hero.jpg",
@@ -52,15 +52,15 @@ export const importantDates = [
 export const keynotes = [
   {
     title: "Keynote I",
-    speaker: "To be announced",
-    affiliation: "Speaker details forthcoming",
-    abstract: "The invited morning keynote will be announced soon.",
+    speaker: "Morning keynote session",
+    affiliation: "YRRSDS 2026",
+    abstract: "The workshop schedule includes an invited morning keynote session as part of the one-day program.",
   },
   {
     title: "Keynote II",
-    speaker: "To be announced",
-    affiliation: "Speaker details forthcoming",
-    abstract: "The invited afternoon keynote will be announced soon.",
+    speaker: "Afternoon keynote session",
+    affiliation: "YRRSDS 2026",
+    abstract: "The workshop schedule includes an invited afternoon keynote session alongside the paper sessions and roundtable.",
   },
 ] as const;
 

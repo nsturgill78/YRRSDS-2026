@@ -16,7 +16,7 @@ export default function KeynotesPage() {
           as="h1"
           eyebrow="Keynotes"
           title="Invited speakers"
-          description="Invited keynote speakers and talk details will be announced soon."
+          description="YRRSDS 2026 includes invited keynote sessions in both the morning and afternoon program."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {keynotes.map((keynote) => (
