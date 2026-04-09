@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div>
           <div className="text-xl font-bold text-white">{site.name}</div>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-300 md:text-base">
-            Official website for the 2026 Young Researchers' Roundtable on Spoken Dialogue Systems at Emory
+            Official website for the 2026 Young Researchers&apos; Roundtable on Spoken Dialogue Systems at Emory
             University in Atlanta, directly preceding SIGDIAL 2026.
           </p>
         </div>
