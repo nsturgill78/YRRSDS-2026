@@ -17,25 +17,33 @@ export default function ParticipatingPage() {
         <SectionTitle
           as="h1"
           eyebrow="Participating"
-          title="How participation will work"
-          description="This page combines attendance details with a practical Emory travel guide, nearby amenities, and local planning tools for July 31, 2026."
+          title="Participation information"
+          description="Registration, presentation, travel, and local logistics information for attendees on July 31, 2026."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
           <InfoCard title="Registration">
             <p>
-              The workshop takes place on {site.dateLabel}. Registration details can be linked here once SIGDIAL
-              2026 registration opens.
+              The workshop takes place on {site.dateLabel}. Registration and workshop updates are available through
+              the official YRRSDS OpenReview page.
             </p>
-            <p>Add organizer-side forms, presenter confirmations, and local attendance instructions in this block.</p>
+            <p>
+              <a
+                href={site.registrationUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-[#d83a34] hover:underline"
+              >
+                Open registration and updates
+              </a>
+            </p>
           </InfoCard>
 
           <InfoCard title="Oral sessions">
             <p>Authors can present accepted work during the paper sessions on July 31, 2026.</p>
             <p>
-              Submissions are planned to open on {site.submissionOpenLabel} and close on {site.submissionCloseLabel}.
-              Use this area for final talk length, Q&amp;A duration, slide guidance, and any poster or lightning
-              fallback format once decisions are finalized.
+              Submissions open on {site.submissionOpenLabel} and close on {site.submissionCloseLabel}. Additional
+              presentation guidance, including timing and format expectations, will be shared with accepted authors.
             </p>
           </InfoCard>
 
