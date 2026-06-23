@@ -10,34 +10,21 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="section-padding bg-zinc-50">
+      <section id="schedule" className="section-padding scroll-mt-24 bg-zinc-50">
         <div className="container-page">
           <SectionTitle
-            eyebrow="Program"
-            title="One-day workshop structure"
-            description="The framework mirrors last year's workshop style while adapting it to a concentrated single-day Atlanta program."
+            eyebrow="Schedule"
+            title="Half-day workshop structure"
+            description="The program is designed as a compact afternoon workshop with one keynote, a research roundtable, and a guided discussion."
           />
 
-          <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+          <div className="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]">
             <div className="rounded-3xl bg-white p-6 shadow-sm">
-              <h2 className="mb-6 text-2xl font-semibold">Draft schedule</h2>
+              <h2 className="mb-6 text-2xl font-semibold">Schedule</h2>
               <ScheduleTable />
             </div>
 
             <div className="space-y-6">
-              <InfoCard title="Format highlights">
-                <ul className="list-inside list-disc space-y-3">
-                  <li>2 keynotes</li>
-                  <li>2 paper sessions</li>
-                  <li>1 panel or roundtable</li>
-                  <li>Optional evening dinner / social event</li>
-                  <li>Extended abstracts as the submission model</li>
-                  <li>
-                    Submissions open {site.submissionOpenLabel} and close {site.submissionCloseLabel}
-                  </li>
-                </ul>
-              </InfoCard>
-
               <InfoCard title="Venue">
                 <p>{site.venue}</p>
                 <p>
@@ -57,8 +44,8 @@ export default function HomePage() {
         <div className="container-page">
           <SectionTitle
             eyebrow="Important dates"
-            title="Planning timeline"
-            description="Key submission and program dates for the 2026 workshop cycle."
+            title="Schedule timeline"
+            description="The workshop schedule has been published for the 2026 program."
           />
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -72,14 +59,8 @@ export default function HomePage() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/cfp"
-              className="rounded-2xl bg-[#d83a34] px-5 py-3 font-medium text-white transition-colors hover:bg-[#bf312c]"
-            >
-              Call for Papers
-            </Link>
-            <Link
               href="/participating"
-              className="rounded-2xl border border-zinc-300 px-5 py-3 font-medium text-zinc-900 transition-colors hover:bg-zinc-50"
+              className="rounded-2xl bg-[#d83a34] px-5 py-3 font-medium text-white transition-colors hover:bg-[#bf312c]"
             >
               Participation Info
             </Link>

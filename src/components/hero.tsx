@@ -34,16 +34,16 @@ export function Hero() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link
-                href="/cfp"
+                href="/program"
                 className="rounded-2xl bg-[#d83a34] px-6 py-4 text-base font-medium text-white transition-colors hover:bg-[#bf312c]"
               >
-                View Call for Papers
+                View Program
               </Link>
               <Link
-                href="/program"
+                href="/participating"
                 className="rounded-2xl bg-white px-6 py-4 text-base font-medium text-zinc-900 transition-colors hover:bg-zinc-100"
               >
-                Explore Program
+                Participation Info
               </Link>
             </div>
           </div>

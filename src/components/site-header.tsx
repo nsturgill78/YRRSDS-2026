@@ -46,10 +46,10 @@ export function SiteHeader() {
           })}
 
           <Link
-            href={site.registrationUrl}
+            href="/participating"
             className="rounded-2xl bg-[#d83a34] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#bf312c]"
           >
-            Register / Updates
+            Participation Info
           </Link>
         </nav>
 
@@ -88,11 +88,11 @@ export function SiteHeader() {
             })}
 
             <Link
-              href={site.registrationUrl}
+              href="/participating"
               onClick={() => setOpen(false)}
               className="block rounded-xl bg-[#d83a34] px-4 py-3 text-center font-medium text-white transition-colors hover:bg-[#bf312c]"
             >
-              Register / Updates
+              Participation Info
             </Link>
           </div>
         </div>

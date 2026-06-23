@@ -54,10 +54,7 @@ export const collaboratorGroups = [
   },
   {
     title: "Collaborator",
-    members: [
-      "Nayoung Choi (2nd Year PhD Candidate, Emory NLP Lab)",
-      "Seongmin Oh (1st Year Master's Student, Emory NLP Lab)",
-    ],
+    members: ["Nayoung Choi (2nd Year PhD Candidate, Emory NLP Lab)"],
   },
 ] as const;
 

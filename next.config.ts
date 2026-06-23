@@ -13,6 +13,8 @@ const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH);
 
 const nextConfig: NextConfig = {
   output: "export",
+  outputFileTracingRoot: process.cwd(),
+  distDir: process.env.NEXT_DIST_DIR || ".next",
   trailingSlash: true,
   images: {
     unoptimized: true,

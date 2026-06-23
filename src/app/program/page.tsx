@@ -4,7 +4,7 @@ import { SectionTitle } from "@/components/section-title";
 
 export const metadata: Metadata = {
   title: "Program",
-  description: "Draft one-day program for YRRSDS 2026 at Emory University in Atlanta.",
+  description: "Half-day afternoon program for YRRSDS 2026 at Emory University in Atlanta.",
 };
 
 export default function ProgramPage() {
@@ -14,8 +14,8 @@ export default function ProgramPage() {
         <SectionTitle
           as="h1"
           eyebrow="Program"
-          title="Draft workshop schedule"
-          description="A one-day structure with two keynotes, two paper sessions, one panel or roundtable, and an optional evening social event."
+          title="Workshop schedule"
+          description="A half-day afternoon structure with one keynote, a research roundtable, a guided discussion, and closing remarks."
         />
         <div className="rounded-3xl bg-white p-6 shadow-sm">
           <ScheduleTable />

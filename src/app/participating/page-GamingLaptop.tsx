@@ -18,7 +18,7 @@ export default function ParticipatingPage() {
           as="h1"
           eyebrow="Participating"
           title="Attendance and logistics"
-          description="Attendance, travel, and local logistics information for attendees on August 2, 2026."
+          description="This page combines attendance details with a practical Emory travel guide, nearby amenities, and local planning tools for August 2, 2026."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -27,9 +27,7 @@ export default function ParticipatingPage() {
               The workshop takes place on {site.dateLabel} as part of the SIGDIAL 2026 program. No separate YRRSDS
               pre-registration is required.
             </p>
-            <p>
-              Attendees should follow SIGDIAL registration and badge access instructions for workshop participation.
-            </p>
+            <p>Attendees should follow SIGDIAL registration and badge access instructions for workshop participation.</p>
           </InfoCard>
 
           <InfoCard title="Research roundtable">

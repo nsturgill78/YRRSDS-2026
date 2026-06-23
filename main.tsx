@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from "react";
+﻿import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, MapPin, CalendarDays, Users, FileText, Mic2, ExternalLink } from "lucide-react";
+import { Menu, X, MapPin, CalendarDays, Users, Mic2, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -8,10 +8,10 @@ const site = {
   shortTitle: "YRRSDS 2026",
   fullTitle: "YRRSDS 2026: Young Researchers’ Roundtable on Spoken Dialogue Systems",
   subtitle:
-    "A one-day workshop at Emory University in Atlanta, directly preceding SIGDIAL 2026, centered on emerging research in spoken dialogue systems.",
+    "A half-day workshop at Emory University in Atlanta, co-located with SIGDIAL 2026, centered on emerging research in spoken dialogue systems.",
   yearLabel: "2026 Edition",
   location: "Atlanta, Georgia, USA",
-  date: "Late July 2026",
+  date: "August 2, 2026",
   venue: "Emory University, Atlanta, Georgia, USA",
   sigdialText: "Co-located with SIGDIAL 2026",
   heroImage:
@@ -21,59 +21,34 @@ const site = {
 
 const navItems = [
   { id: "home", label: "Home" },
-  { id: "program", label: "Program" },
+  { id: "program", label: "Schedule" },
   { id: "keynotes", label: "Keynotes" },
   { id: "participating", label: "Participating" },
-  { id: "cfp", label: "Call for Papers" },
   { id: "committees", label: "Committees" },
 ];
 
 const programSchedule = [
-  { time: "8:00–8:45", session: "Registration / coffee" },
-  { time: "8:45–9:00", session: "Welcome remarks" },
-  { time: "9:00–9:45", session: "Keynote I" },
-  { time: "10:00–11:30", session: "Paper Session I" },
-  { time: "11:30–12:15", session: "Lunch" },
-  { time: "12:15–1:00", session: "Keynote II" },
-  { time: "1:15–2:15", session: "Panel / roundtable" },
-  { time: "2:30–4:00", session: "Paper Session II" },
+  { time: "1:00–1:15", session: "Welcome" },
+  { time: "1:15–2:00", session: "Keynote" },
+  { time: "2:00–2:15", session: "Break" },
+  { time: "2:15–3:15", session: "Research roundtable" },
+  { time: "3:15–4:00", session: "Guided discussion: open challenges in spoken dialogue systems" },
   { time: "4:00–4:15", session: "Closing remarks" },
-  { time: "Evening", session: "Optional dinner / social event" },
 ];
 
 const importantDates = [
-  { label: "CFP and website announcement", date: "Mid-March 2026" },
-  { label: "Submission deadline", date: "Late April 2026" },
-  { label: "Review period", date: "Early–mid May 2026" },
-  { label: "Notifications sent", date: "Mid-May 2026" },
-  { label: "Presenter confirmations due", date: "Late May 2026" },
-  { label: "Final program published", date: "Mid-June 2026" },
-  { label: "Workshop held in Atlanta", date: "Late July 2026" },
+  { label: "Schedule published", date: "June 23, 2026" },
+  { label: "Workshop held in Atlanta", date: "August 2, 2026" },
 ];
 
 const keynotePlaceholders = [
   {
-    title: "Keynote I",
-    speaker: "Speaker TBA",
-    affiliation: "Affiliation TBA",
+    title: "Keynote",
+    speaker: "T.B.A.",
+    affiliation: "Bio and talk overview forthcoming",
     description:
-      "Use this block for the invited morning keynote and a short abstract once confirmed.",
+      "The keynote details will be announced once the speaker bio and talk overview are finalized.",
   },
-  {
-    title: "Keynote II",
-    speaker: "Speaker TBA",
-    affiliation: "Affiliation TBA",
-    description:
-      "Use this block for the invited afternoon keynote and a short abstract once confirmed.",
-  },
-];
-
-const cfpBullets = [
-  "Submission format: extended abstracts only",
-  "Recommended length: 750–1000 words",
-  "Target review load: 2 reviews per submission when possible",
-  "Decision types: talk / lightning or poster (if needed) / decline",
-  "Workshop design: one day, with two keynotes, two paper sessions, and one panel or roundtable",
 ];
 
 const committeeGroups = [
@@ -180,7 +155,7 @@ export default function YRRSDS2026Website() {
             {navItems.map((item) => (
               <NavLink key={item.id} item={item} active={active === item.id} />
             ))}
-            <Button className="rounded-2xl bg-[#d83a34] hover:bg-[#bf312c]">Register / Updates</Button>
+            <Button className="rounded-2xl bg-[#d83a34] hover:bg-[#bf312c]">Participation Info</Button>
           </nav>
 
           <button
@@ -206,7 +181,7 @@ export default function YRRSDS2026Website() {
                 />
               ))}
               <Button className="mt-2 w-full rounded-2xl bg-[#d83a34] hover:bg-[#bf312c]">
-                Register / Updates
+                Participation Info
               </Button>
             </div>
           </div>
@@ -244,10 +219,10 @@ export default function YRRSDS2026Website() {
                 </div>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <Button className="rounded-2xl bg-[#d83a34] px-6 py-6 text-base hover:bg-[#bf312c]">
-                    View Call for Papers
+                    View Schedule
                   </Button>
                   <Button variant="secondary" className="rounded-2xl px-6 py-6 text-base">
-                    Explore Program
+                    Participation Info
                   </Button>
                 </div>
               </motion.div>
@@ -258,15 +233,15 @@ export default function YRRSDS2026Website() {
 
       <Section id="program" className="bg-zinc-50">
         <SectionTitle
-          eyebrow="Program"
-          title="One-day workshop structure"
-          description="The framework mirrors last year’s workshop style while adapting it to a concentrated single-day Atlanta program with two keynotes, two paper sessions, and one panel or roundtable."
+          eyebrow="Schedule"
+          title="Half-day workshop structure"
+          description="The program is designed as a compact afternoon workshop with one keynote, a research roundtable, and a guided discussion."
         />
 
-        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+        <div className="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]">
           <Card className="rounded-3xl border-0 shadow-sm">
             <CardHeader>
-              <CardTitle className="text-2xl">Draft schedule</CardTitle>
+              <CardTitle className="text-2xl">Schedule</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="overflow-hidden rounded-2xl border border-zinc-200">
@@ -292,21 +267,6 @@ export default function YRRSDS2026Website() {
           <div className="space-y-6">
             <Card className="rounded-3xl border-0 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-xl">Format highlights</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-sm leading-6 text-zinc-700 md:text-base">
-                  <li>• 2 keynotes</li>
-                  <li>• 2 paper sessions</li>
-                  <li>• 1 panel or roundtable</li>
-                  <li>• Optional evening dinner / social event</li>
-                  <li>• Extended abstracts as the submission model</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-3xl border-0 shadow-sm">
-              <CardHeader>
                 <CardTitle className="text-xl">Venue</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-zinc-700 md:text-base">
@@ -322,7 +282,7 @@ export default function YRRSDS2026Website() {
         <SectionTitle
           eyebrow="Keynotes"
           title="Invited speakers"
-          description="These cards are ready to be replaced with confirmed keynote details, talk titles, bios, and abstracts."
+          description="YRRSDS 2026 includes one keynote session as part of the half-day afternoon program. Speaker details are T.B.A. pending the bio and talk overview."
         />
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -346,28 +306,28 @@ export default function YRRSDS2026Website() {
       <Section id="participating" className="bg-zinc-50">
         <SectionTitle
           eyebrow="Participating"
-          title="How participation will work"
+          title="Attendance and logistics"
           description="This section keeps the same role as the previous website: making attendance, presentation expectations, and practical logistics easy to find."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
           <Card className="rounded-3xl border-0 shadow-sm lg:col-span-1">
             <CardHeader>
-              <CardTitle className="text-xl">Registration</CardTitle>
+              <CardTitle className="text-xl">Attendance</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-sm leading-6 text-zinc-700 md:text-base">
-              <p>Registration details can be linked here once SIGDIAL 2026 registration opens.</p>
-              <p>Add organizer-side forms, presenter confirmations, and local attendance instructions in this block.</p>
+              <p>The workshop occurs as part of the SIGDIAL 2026 program. No separate YRRSDS pre-registration is required.</p>
+              <p>Attendees should follow SIGDIAL registration and badge access instructions for workshop participation.</p>
             </CardContent>
           </Card>
 
           <Card className="rounded-3xl border-0 shadow-sm lg:col-span-1">
             <CardHeader>
-              <CardTitle className="text-xl">Oral sessions</CardTitle>
+              <CardTitle className="text-xl">Research roundtable</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-sm leading-6 text-zinc-700 md:text-base">
-              <p>Authors can present accepted work during the paper sessions.</p>
-              <p>Use this area for final talk length, Q&A duration, slide guidance, and any poster or lightning fallback format.</p>
+              <p>Participants can share current projects and discussion topics during the research roundtable.</p>
+              <p>Use this area for final roundtable format, brief update guidance, and discussion format details.</p>
             </CardContent>
           </Card>
 
@@ -385,53 +345,10 @@ export default function YRRSDS2026Website() {
         </div>
       </Section>
 
-      <Section id="cfp">
-        <SectionTitle
-          eyebrow="Call for Papers"
-          title="Extended abstracts for a focused one-day program"
-          description="This CFP section is scaffolded from the planning notes and is ready for official wording, submission links, and final policy details."
-        />
-
-        <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-          <Card className="rounded-3xl border border-zinc-200 shadow-sm">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-2xl">
-                <FileText className="h-6 w-6 text-[#d83a34]" /> Submission model
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3 text-sm leading-6 text-zinc-700 md:text-base">
-                {cfpBullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="rounded-3xl border border-zinc-200 shadow-sm">
-            <CardHeader>
-              <CardTitle className="text-2xl">Important dates</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {importantDates.map((item) => (
-                  <div key={item.label} className="flex items-start justify-between gap-4 rounded-2xl border border-zinc-200 px-4 py-4">
-                    <div className="font-medium">{item.label}</div>
-                    <div className="whitespace-nowrap rounded-full bg-[#d83a34]/10 px-3 py-1 text-sm font-semibold text-[#d83a34]">
-                      {item.date}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </Section>
-
       <Section id="committees" className="bg-zinc-50">
         <SectionTitle
           eyebrow="Committees"
-          title="Organization and review"
+          title="Organization and coordination"
           description="This section is structured to match the typical workshop website layout and can be updated as names are finalized."
         />
 
@@ -458,14 +375,13 @@ export default function YRRSDS2026Website() {
           <div>
             <div className="text-xl font-bold text-white">{site.shortTitle}</div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-300 md:text-base">
-              Web framework draft for the 2026 Atlanta edition. Replace placeholders with final keynote speakers,
-              committee members, venue details, submission links, and SIGDIAL coordination information.
+              Web framework for the 2026 Atlanta edition. Replace placeholders with final keynote speakers,
+              committee members, venue details, and SIGDIAL coordination information.
             </p>
           </div>
           <div className="grid gap-2 text-sm md:justify-self-end md:text-right">
             <a href="#home" className="hover:text-white">Back to top</a>
-            <a href="#cfp" className="hover:text-white">Call for Papers</a>
-            <a href="#program" className="hover:text-white">Program</a>
+            <a href="#program" className="hover:text-white">Schedule</a>
             <a href="#participating" className="hover:text-white">Participating</a>
           </div>
         </div>

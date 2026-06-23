@@ -10,8 +10,7 @@ function normalizeBasePath(value?: string) {
 }
 
 export const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH);
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://yrrsds2026.example.com";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yrrsds2026.example.com";
 
 export function assetPath(path: string) {
   if (!path.startsWith("/")) {
@@ -22,8 +21,8 @@ export function assetPath(path: string) {
 }
 
 export function absoluteUrl(path = "/") {
-  const resolvedPath = path.startsWith("/") ? `${basePath}${path}` || "/" : path;
-  return new URL(resolvedPath, siteUrl).toString();
+  const pathWithSlash = path.startsWith("/") ? path : `/${path}`;
+  return `${siteUrl.replace(/\/+$/, "")}${pathWithSlash}`;
 }
 
 export { site };
