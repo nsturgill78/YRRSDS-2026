@@ -22,12 +22,12 @@ export const navItems = [
 ] as const;
 
 export const schedule = [
-  { time: "1:00-1:15", session: "Welcome" },
-  { time: "1:15-2:00", session: "Keynote" },
-  { time: "2:00-2:15", session: "Break" },
-  { time: "2:15-3:15", session: "Research roundtable" },
-  { time: "3:15-4:00", session: "Guided discussion: open challenges in spoken dialogue systems" },
-  { time: "4:00-4:15", session: "Closing remarks" },
+  { time: "2:30-2:45", session: "Welcome" },
+  { time: "2:45-3:30", session: "Keynote" },
+  { time: "3:30-3:45", session: "Break" },
+  { time: "3:45-4:45", session: "Research roundtable" },
+  { time: "4:45-5:30", session: "Guided discussion: open challenges in spoken dialogue systems" },
+  { time: "5:30-5:45", session: "Closing remarks" },
 ] as const;
 
 export const importantDates = [
